@@ -1,0 +1,11 @@
+﻿@model IEnumerable<FeedbackAppBackend.Models.FeedbackViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach(var feedback in Model)
+            {
+    <h1>@feedback.Subject</h1>
+    <p>@feedback.Text</p>
+    <p>@feedback.Rating</p>
+            }
