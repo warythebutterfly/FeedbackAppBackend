@@ -73,8 +73,8 @@ namespace FeedbackAppBackend.Services
                     Rating = x.Rating
                 }).Take(10).ToListAsync();
 
-                if (feedbacks == null || feedbacks.Count == 0)
-                    throw new CustomException("No feedbacks at the moment. Please try again later.");
+                //if (feedbacks == null || feedbacks.Count == 0)
+                //    throw new CustomException("No feedbacks at the moment. Please try again later.");
 
                 return feedbacks;
             }
